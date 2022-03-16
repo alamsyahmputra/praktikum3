@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Konversi nilai</title>
+</head>
+<script language="JavaScript">
+	function test() {
+		// body...
+		var val1 = document.kirim.nilai.value 
+
+		if (val1 >=81 && val1<=100)
+			document.kirim.nilai.value = "A"
+		else if (val1 >=71 && val1<=80)
+			document.kirim.nilai.value = "AB"
+		else if (val1 >=66 && val1<=70) 
+			document.kirim.nilai.value = "B"
+		else if (val1 >=61 && val1<=65)
+			document.kirim.nilai.value = "BC"
+		else if (val1 >=56 && val1<=60) 
+			document.kirim.nilai.value = "C"
+		else if (val1 >=41 && val1<=55) 
+			document.kirim.nilai.value = "D"
+		else if (val1 >=0 && val1<=40) 
+			document.kirim.nilai.value = "E"
+	}
+</script>
+<body>
+<form method="post" name="kirim">
+<table width="300" height="160" border="1" align="center" bordercolor="0000FF" bgcolor="00CCFF">
+	<tr>
+		<th colspan="2" scope="col"><center><blink>Program JavaScript Konversi Nilai</blink></center></th>
+	</tr>
+	<tr>
+		
+	
+	<td>Masukkan Nilai</td>
+	<td><input type="text" name="nilai" size="20"></td>
+</tr>
+<tr>
+	<td>Konversi Nilai</td>
+	<td><input type="text" name="konversi" size="20"></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td><input type="Button" name="B1"  value = "Konversi" onclick="test()"><input type="Reset" name="Reset" value="reset"></td>
+</tr>
+</table>	
+</form>
+</body>
+</html>
